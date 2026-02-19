@@ -161,21 +161,26 @@ img {
 }
 
 .hero-top-text {
-    font-size: 32px;
+    font-size: clamp(18px, 4vw, 32px);
+    /* Scales down on mobile */
     font-weight: 500;
     color: var(--text-secondary);
     margin-bottom: 10px;
     letter-spacing: -0.02em;
+    word-break: keep-all;
 }
 
 .hero-title {
-    font-size: 68px;
+    font-size: clamp(36px, 9vw, 68px);
+    /* Fluid scaling */
     font-weight: 900;
     line-height: 1.1;
     /* Tighter line height for 2 lines */
     margin-bottom: 30px;
     color: var(--text-primary);
     letter-spacing: -0.03em;
+    word-break: keep-all;
+    /* Prevent awkward word breaks */
 }
 
 .hero-message {
@@ -280,10 +285,12 @@ img {
 
 .section-header {
     text-align: center;
-    font-size: 42px;
+    font-size: clamp(26px, 5vw, 42px);
+    /* Helper text fluid sizing */
     font-weight: 800;
     margin-bottom: 100px;
     color: var(--text-primary);
+    word-break: keep-all;
 }
 
 .header-highlight {
@@ -329,7 +336,8 @@ img {
 }
 
 .title-line-1 {
-    font-size: 32px;
+    font-size: clamp(24px, 5vw, 32px);
+    /* Fluid scaling */
     color: #191F28;
     /* Explicit Black */
     display: block;
@@ -337,7 +345,7 @@ img {
 
 /* Step 1 Specific: Balanced Tight (Touching) */
 .step-1-title .title-line-1 {
-    margin-bottom: -0px;
+    margin-bottom: -12px;
     /* Overlap to make visually attached */
     line-height: 1.0;
     position: relative;
@@ -353,7 +361,8 @@ img {
 
 /* Step 2 Specific: Balanced Gap (Slight Separation) */
 .step-2-title .title-line-1 {
-    font-size: 45px;
+    font-size: clamp(30px, 6vw, 45px);
+    /* Fluid scaling big text */
     margin-bottom: 5px;
     /* Slight gap (Standard) */
     line-height: 1.1;
@@ -368,7 +377,8 @@ img {
 }
 
 .title-line-2 {
-    font-size: 48px;
+    font-size: clamp(32px, 7vw, 48px);
+    /* Fluid scaling huge text */
     color: #191F28;
     /* Default no highlight, specific classes add it */
 }
