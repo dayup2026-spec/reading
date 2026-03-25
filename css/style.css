@@ -566,6 +566,22 @@ img {
     color: #AAA;
 }
 
+.footer-info {
+    margin-top: 12px;
+    font-size: 11px;
+    color: #BBB;
+    line-height: 1.8;
+}
+
+.footer-info a {
+    color: #BBB;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    color: #888;
+}
+
 /* =========================================
    FAB (Standard)
    ========================================= */
